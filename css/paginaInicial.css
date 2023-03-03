@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(241, 245, 247);;
+}
+
+.titulo{
+    font-family: calibri;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5%;
+    text-align: center;
+    color: rgb(79, 48, 179);
+}
+
+.conteudo{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%), 0 8px 16px rgb(0 0 0 / 15%);
+    border-radius: 6px;
+}
+
+.autenticador{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.autenticador-request, .autenticador-response{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.autenticador-response{padding-top: 0;}
+
+.input-autenticador{
+    height: 40px;
+    width: 55%;
+    border: 1px solid rgb(168, 168, 168);
+    background: rgba(0, 0, 0, 0.01);
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+    padding-left: 10px;
+}
+
+.btn-autenticador{
+    margin-left: 15px;
+    width: 35%;
+    height: 40px;
+    background: rgb(79, 48, 179);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-autenticador:hover{
+    background: rgb(63, 36, 148);
+}
+
+.response{
+    width: 100%;
+    background: rgba(100, 10, 234, 0.1);
+}
+
+.subtitulo-response, .texto-response{
+    margin: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(79, 48, 179);
+    font-weight: bold;
+}
+
+.subtitulo-response{
+    margin-bottom: -12.5px;
+}
+
+.texto-response{
+    color: rgb(85, 85, 85);
+    font-weight:initial;
+}
+
+@media screen and (max-width: 400px) {
+    .conteudo{
+        width: 90%;
+    }
+
+    .input-autenticador, .btn-autenticador{
+        width: 100%;
+    }
+
+    .btn-autenticador{
+        margin: 15px 0 0 0;
+    }
+}

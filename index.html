@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticador de CPF</title>
+
+    <link rel="stylesheet" href="css/paginaInicial.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous" defer>
+    </script>
+    <script src="js/autenticar.js" defer></script>
+</head>
+<body>
+
+    <h1 class="titulo">Validador de CPF</h1>
+
+    <main class="conteudo">
+        <div class="autenticador">
+            <div class="autenticador-request">
+                <input class="input-autenticador" type="text"
+                placeholder="Digite apenas números" id="cpf" maxlength="11">
+                <button class="btn-autenticador" type="button" onclick="validar()">Verificar</button>
+            </div>
+
+            <div class="autenticador-response">
+                <div class="response">
+                    <p class="subtitulo-response">Resultado</p>
+                    <p class="texto-response" id="respostaValidacao"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
